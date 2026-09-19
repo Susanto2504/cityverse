@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="min-h-screen bg-[#F4FFFC] font-['Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-[#C3E956] selection:text-[#1F4B2C]">
         <Header title="Dashboard" />
 
         <!-- BEGIN: DynamicTabScreensContainer -->
@@ -81,7 +81,7 @@
                         <div ref="mapContainer" class="w-full h-full"></div>
                         
                         <!-- Custom Attribution Tag -->
-                        <div class="absolute bottom-2 right-2 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] text-slate-600 font-medium z-[1000] border border-slate-200 pointer-events-none">
+                        <div class="absolute bottom-2 left-2 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] text-slate-600 font-medium z-[1000] border border-slate-200 pointer-events-none">
                         Makassar GIS Live Engine © 2026 CityVerse
                         </div>
                     </div>

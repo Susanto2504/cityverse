@@ -7,6 +7,8 @@
                 <p class="text-xs md:text-sm font-bold text-emerald-800/70 tracking-wide mt-1 uppercase" id="header-sub-title">Kota MAKASSAR</p>
             </div>
 
+            
+
             <!-- Global Header Controls -->
             <div class="flex items-center gap-4">
                 <!-- Notification Bell with Active Indicator Count (3) -->
