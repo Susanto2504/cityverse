@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 
+// Daftarkan event 'close'
+defineEmits(['close'])
+
 const handleLogout = () => {
   alert('Sesi administrasi diamankan.')
 }
@@ -31,6 +34,7 @@ const handleLogout = () => {
         <!-- Item 1: Dashboard -->
         <RouterLink 
           to="/dashboard" 
+          @click="$emit('close')"
           active-class="bg-white/20 text-white shadow-sm"
           class="w-full flex items-center gap-3.5 px-4 py-3 rounded-full text-sm font-semibold transition-all duration-200 text-emerald-100 hover:bg-white/10"
         >
@@ -42,7 +46,8 @@ const handleLogout = () => {
 
         <!-- Item 2: Data dan Konfigurasi Kota -->
         <RouterLink 
-          to="/config" 
+          to="/config"
+          @click="$emit('close')" 
           active-class="bg-white/20 text-white shadow-sm"
           class="w-full flex items-center gap-3.5 px-4 py-3 rounded-full text-sm font-semibold transition-all duration-200 text-emerald-100 hover:bg-white/10"
         >
@@ -54,7 +59,8 @@ const handleLogout = () => {
 
         <!-- Item 3: Simulasi dan Analisis -->
         <RouterLink 
-          to="/simulation" 
+          to="/simulation"
+          @click="$emit('close')" 
           active-class="bg-white/20 text-white shadow-sm"
           class="w-full flex items-center gap-3.5 px-4 py-3 rounded-full text-sm font-semibold transition-all duration-200 text-emerald-100 hover:bg-white/10"
         >
@@ -66,7 +72,8 @@ const handleLogout = () => {
 
         <!-- Item 4: Laporan Data -->
         <RouterLink 
-          to="/laporan" 
+          to="/laporan"
+          @click="$emit('close')" 
           active-class="bg-white/20 text-white shadow-sm"
           class="w-full flex items-center gap-3.5 px-4 py-3 rounded-full text-sm font-semibold transition-all duration-200 text-emerald-100 hover:bg-white/10"
         >
@@ -79,6 +86,7 @@ const handleLogout = () => {
         <!-- Item 5: Pengaturan -->
         <RouterLink 
           to="/settings" 
+          @click="$emit('close')"
           active-class="bg-white/20 text-white shadow-sm"
           class="w-full flex items-center gap-3.5 px-4 py-3 rounded-full text-sm font-semibold transition-all duration-200 text-emerald-100 hover:bg-white/10"
         >

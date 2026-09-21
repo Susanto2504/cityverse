@@ -1,7 +1,7 @@
 <template>
     <div class="min-h-screen bg-[#F4FFFC] font-['Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-[#C3E956] selection:text-[#1F4B2C]">
         <!-- Bagian Header -->
-        <Header title="Simulasi &amp; Analisis" />
+        <Header title="Simulasi &amp; Analisis" @click="$emit('toggle-sidebar')" />
 
         <!-- Bagian Main -->
         <main class="mx-auto max-w-full px-4 py-8 sm:px-6 lg:px-8 space-y-8">

@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-[var(--color-mint-50)] font-['Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-[var(--color-brand-bright)] selection:text-[var(--color-brand-deep)] pb-12">
     <!-- Header -->
-    <Header title="Pengaturan" />
+    <Header title="Pengaturan" @click="$emit('toggle-sidebar')" />
 
     <!-- Main Wrapper -->
     <main class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8">

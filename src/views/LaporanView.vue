@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-[#F4FFFC] font-['Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-[#C3E956] selection:text-[#1F4B2C]">
     <!-- Bagian Header Component -->
-    <Header title="Laporan Data" />
+    <Header title="Laporan Data" @click="$emit('toggle-sidebar')" />
 
     <!-- Bagian Main -->
     <main class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">

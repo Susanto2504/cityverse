@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen bg-[#F4FFFC] font-['Plus_Jakarta_Sans',sans-serif] text-slate-800 antialiased selection:bg-[#C3E956] selection:text-[#1F4B2C]">
-        <Header title="Dashboard" />
+        <Header title="Dashboard" @toggle-sidebar="$emit('toggle-sidebar')" />
 
         <!-- BEGIN: DynamicTabScreensContainer -->
         <div class="flex-1 overflow-y-auto p-6 md:p-8 space-y-6">
@@ -288,6 +288,8 @@ import 'leaflet/dist/leaflet.css'
 import iconUrl from 'leaflet/dist/images/marker-icon.png'
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png'
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png'
+
+defineEmits(['toggle-sidebar'])
 
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
